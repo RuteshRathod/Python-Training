@@ -1,0 +1,69 @@
+Python Dictionaries and Sets Assignment.
+
+1. Given a dict object in ./assignment_data/Question_1.json. Re arrange the data structure to a list data structure.
+For eg.
+(Input) :- 
+{
+  "web-app": {
+    "servlet": [
+      {
+        "servlet-name": "cofaxCDS",
+        "servlet-class": "org.cofax.cds.CDSServlet",
+        "init-param": {
+          "configGlossary:installationAt": "Philadelphia, PA",
+          "configGlossary:adminEmail": "ksm@pobox.com",
+          ...
+        }
+       }...
+      ]
+   }
+}
+
+Output :- 
+{
+  "init-param": [
+    {
+      "configGlossary:installationAt": "Philadelphia, PA",
+      "fromType": "servlet"
+    },
+    {
+      "configGlossary:adminEmail": "ksm@pobox.com",
+      "fromType": "servlet"
+    }
+    ....
+  ]
+}
+
+
+2. List of 10 employee object.
+    Single employee object may contain keys as follows 'name', 'salary', 'age', 'status'.
+    
+    For Example
+    [
+       {'name':'Joel', 'salary': '25', 'experience': 2, 'status': 'Okay'}
+       {'name':'Imtiyaz', 'experience': 2, 'status': 'Okay'}
+        .....
+    ]
+
+Calculate Salary 
+    => 10 * experience 
+    => Add 5 to salary if status is Okay else add 0 
+    => Change status to 'HR Approval'.
+    
+Calculate Avg. Salary of employees if 'status': 'Okay'
+
+
+3. Google search 3 articles
+    i. Changing climate. (A)
+    ii. GST. (B)
+    iii. AI a boon or a curse. (C)
+    
+    Save the text of the 3 article in a variable (string) respectively.
+    Convert the string into set object. (Set should contain atleast 50 unique words.)
+    
+    Find
+        i. Only common words from A and C
+        ii. True or false : len( A U C ) < len( B )
+        iii. All the words of B but not in A as well as not in C
+
+    
